@@ -1,0 +1,36 @@
+@model MyShop.Models.ItemsModel
+
+<div class="form-container">
+    <h1>Product Registration</h1>
+    <form asp-action="" method="post">
+    
+        <div>
+            <label asp-for="Name">Product-Name:</label>
+            <input type="text" asp-for="Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Price">Product-Price:</label>
+            <input type="number" asp-for="Price">
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Description">Description:</label>
+            <input type="text" asp-for="Description">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="UnitsAvailable">Available-Units:</label>
+            <input type="number" asp-for="UnitsAvailable">
+            <span asp-validation-for="UnitsAvailable" class="text-danger"></span>
+        </div>
+
+        <div>
+            <button type="submit">Create</button>
+        </div>
+    </form>
+</div>
+
+<script src="/~css/site.css/"></script>
+
+

@@ -1,0 +1,14 @@
+﻿@page
+@using MyShop.Models
+@model Pages.Products.ProductsModel
+
+@{
+    ViewData["Title"] = "Product Creation";
+}
+
+
+@section Scripts{
+    @await Html.PartialAsync("_AddProductsPartial", new ItemsModel())
+     <partial name="_ValidationScriptsPartial" />
+}
+
