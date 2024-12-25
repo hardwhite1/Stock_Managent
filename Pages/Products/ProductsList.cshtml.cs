@@ -15,11 +15,13 @@ namespace MyShop.Pages.Products
         {
             _addProducts = addProducts;
         }
-        [BindProperty]
-        public ItemsModel itemsModel{ get; set; }
-        public void OnGet()
+    
+        public IList<ItemsModel> itemsModels { get; set; }
+        public async Task OnGet()
         {
-            
+            itemsModels = await _addProducts.FetchProductsAsync();
+        
+         
         }
         public void  OnPost()
         {

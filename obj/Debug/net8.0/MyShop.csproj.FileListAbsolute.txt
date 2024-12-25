@@ -136,3 +136,4 @@ B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\refint\MyShop.dll
 B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.pdb
 B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.genruntimeconfig.cache
 B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref\MyShop.dll
+B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.sourcelink.json

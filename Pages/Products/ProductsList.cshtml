@@ -5,4 +5,7 @@
     ViewData["Title"] = "Available Products";
 }
 
-<p>Hello world!</p>
+@foreach(var products in Model.itemsModels)
+{
+    <li>@products.Name</li>
+}

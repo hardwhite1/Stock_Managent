@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using MyShop.Data;
 using MyShop.Models;
 
@@ -20,6 +21,10 @@ namespace MyShop.Services
             
             return saveResult == 1;
 
+        }
+        public async Task<ItemsModel[]> FetchProductsAsync()
+        {
+           return await _applicationDbContext.itemsModels.ToArrayAsync();
         }
 
     }
