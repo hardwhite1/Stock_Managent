@@ -7,7 +7,7 @@ using MyShop.Services;
 
 namespace MyShop.Pages.Products
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class ProductsModel : PageModel
     {
         private readonly IAddProducts _addProducts;
@@ -32,7 +32,7 @@ namespace MyShop.Pages.Products
             {
                 return BadRequest("Could not add product!");
             }
-            return RedirectToPage("/Products/ProductsList");        
+            return RedirectToPage("/Products/ProductsList");   // POST-REDIRECT-GET     
         }
     }
 }

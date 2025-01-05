@@ -7,7 +7,7 @@ using MyShop.Services;
 
 namespace MyShop.Pages.Products
 {
-   // [Authorize]
+    [Authorize]
     public class ProductsListModel : PageModel
     {
         private readonly IAddProducts _addProducts;
@@ -17,11 +17,13 @@ namespace MyShop.Pages.Products
         }
     
         public IList<ItemsModel> itemsModels { get; set; }
-        public async Task OnGet()
+        public Pagination Pagination { get; set; }
+        public async Task OnGet(int currentPage = 1, int pageSize = 8)
         {
-            itemsModels = await _addProducts.FetchProductsAsync();
+            var result = await _addProducts.FetchProductsAsync(currentPage, pageSize);
         
-         
+            itemsModels = result.itemsModels;
+            Pagination = result.Pagination;
         }
         public void  OnPost()
         {

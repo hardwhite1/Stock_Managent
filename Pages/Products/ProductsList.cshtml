@@ -4,8 +4,40 @@
 @{
     ViewData["Title"] = "Available Products";
 }
+<script src="/~/css/site.css/"></script>
 
-@foreach(var products in Model.itemsModels)
-{
-    <li>@products.Name</li>
-}
+<div class="product-grid">
+    @foreach(var products in Model.itemsModels)
+    {
+        <div class="product-item">
+            <div class="product-image">
+
+            </div>
+            <div class="product-info">
+                <h4><strong>Product-Name:</strong>@products.Name</h4>
+                <p><strong>Product-Price:</strong>@products.Price</p>
+                <p><strong>Description:</strong>@products.Description</p>
+                <p><strong>Remaining-Units:</strong>@products.UnitsAvailable</p>
+                <button><a href="">Add to Cart</a></button>
+            </div>
+        </div>      
+    }
+    <div class="pagination">
+        @if (Model.Pagination.HasPreviousPage)
+        {
+            <a asp-page="./ProductsList" asp-route-currentPage="@(Model.Pagination.CurrentPage - 1)"
+            asp-route-pageSize="@Model.Pagination.PageSize">Previous
+            </a>
+        }
+
+        Page @Model.Pagination.CurrentPage of @Model.Pagination.TotalPages
+
+        @if (Model.Pagination.HasNextPage)
+        {
+            <a asp-page="./ProductsList" asp-route-currentPage="@(Model.Pagination.CurrentPage + 1)"
+            asp-route-pageSize="@Model.Pagination.PageSize">Next
+            </a>
+        }
+
+    </div>
+</div>

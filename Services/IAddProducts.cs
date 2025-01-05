@@ -5,6 +5,6 @@ namespace MyShop.Services
     public interface IAddProducts
     {
         Task<bool> AddProductsAsync(ItemsModel itemsModel);
-        Task<ItemsModel[]> FetchProductsAsync();
+        Task<(List<ItemsModel> itemsModels, Pagination Pagination)> FetchProductsAsync(int currentPage, int pageSize);
     }
 }
