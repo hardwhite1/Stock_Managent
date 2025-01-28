@@ -29,6 +29,7 @@ builder.Services.ConfigureApplicationCookie(options=>
 });
 builder.Services.AddScoped<IAddProducts, AddProductsService>();
 
+
 var app = builder.Build();
 // Initialize roles
 using (var scope  = app.Services.CreateScope())

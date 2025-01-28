@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LxfitM/7qmanlzsYFVLQ1s5FQ1I3SrTWQzubBChvre8=",
+  "Hash": "cv/++iXbdLjul4MsIe5jTPdQ9UHxcMJBnqwRIKGH700=",
   "Source": "MyShop",
   "BasePath": "_content/MyShop",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\Lexu Lx.jpeg",
+      "SourceId": "MyShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\",
+      "BasePath": "_content/MyShop",
+      "RelativePath": "Images/Lexu Lx.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Lexu Lx.jpeg"
     },
     {
       "Identity": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\js\\site.js",

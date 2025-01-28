@@ -2,7 +2,7 @@
 
 <div class="form-container">
     <h1>Product Creation</h1>
-    <form asp-action="" method="post">
+    <form asp-action="" method="post" enctype="multipart/form-data">
     
         <div>
             <label asp-for="Name">Product-Name:</label>
@@ -23,6 +23,10 @@
             <label asp-for="UnitsAvailable">Available-Units:</label>
             <input type="number" asp-for="UnitsAvailable">
             <span asp-validation-for="UnitsAvailable" class="text-danger"></span>
+        </div>
+        <div>
+            <label class="form-label">Upload Image</label>
+            <input type="file" name="file" class="form-control">
         </div>
 
         <div>

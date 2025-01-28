@@ -5,7 +5,9 @@
 @{
     ViewData["Title"] = "Product Creation";
 }
-
+   
+        <img src="@Model.FilePath" alt="Image unavailable" />
+    
 
 @section Scripts{
     @await Html.PartialAsync("_AddProductsPartial", new ItemsModel())

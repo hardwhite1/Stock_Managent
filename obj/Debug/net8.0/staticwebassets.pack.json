@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MyShop.bundle.scp.css"
     },
     {
+      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\Lexu Lx.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Lexu Lx.jpeg"
+    },
+    {
       "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

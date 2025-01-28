@@ -15,19 +15,29 @@ namespace MyShop.Pages.Products
         {
             _addProducts = addProducts;
         }
-       
+
+        public string FilePath { get;  set; }
+
         public void OnGet()
         {
             
         }
-        public async Task<IActionResult> OnPostAsync(ItemsModel itemsModel)
+        public async Task<IActionResult> OnPostAsync(ItemsModel itemsModel, IFormFile file)
         {
+
+            if(file != null)
+            {
+                           
+             FilePath = await _addProducts.UploadFile(file);
+            }
+
             if(!ModelState.IsValid)
             {
-                return RedirectToPage("Index");
+                return RedirectToPage("/Index");
             }
 
             var successful = await _addProducts.AddProductsAsync(itemsModel);
+
             if(!successful)
             {
                 return BadRequest("Could not add product!");

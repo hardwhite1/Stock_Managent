@@ -6,5 +6,7 @@ namespace MyShop.Services
     {
         Task<bool> AddProductsAsync(ItemsModel itemsModel);
         Task<(List<ItemsModel> itemsModels, Pagination Pagination)> FetchProductsAsync(int currentPage, int pageSize);
+
+         Task <string> UploadFile(IFormFile file);
     }
 }
