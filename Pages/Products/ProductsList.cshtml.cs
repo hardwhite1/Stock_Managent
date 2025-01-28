@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using MyShop.Data;
 using MyShop.Models;
 using MyShop.Services;
@@ -11,9 +12,11 @@ namespace MyShop.Pages.Products
     public class ProductsListModel : PageModel
     {
         private readonly IAddProducts _addProducts;
-        public ProductsListModel(IAddProducts addProducts)
+        private readonly ApplicationDbContext _applicationDbContext;
+        public ProductsListModel(IAddProducts addProducts, ApplicationDbContext applicationDbContext)
         {
             _addProducts = addProducts;
+            _applicationDbContext = applicationDbContext;
         }
     
         public IList<ItemsModel> itemsModels { get; set; }
@@ -28,6 +31,34 @@ namespace MyShop.Pages.Products
         public void  OnPost()
         {
            
+            
+        }
+
+        public IActionResult OnPostDelete( Guid id)
+        {
+            // find product by Id
+            var products =  _applicationDbContext.itemsModels.FirstOrDefault(p => p.Id == id);
+
+            if(products == null)
+            {
+                return NotFound();
+            }
+
+            // Delete the associated image file
+            if(!string.IsNullOrEmpty(products.ImagePath))
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", products.ImagePath.TrimStart('/'));
+
+                if(System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+            }
+            // Remove the product from the database
+            _applicationDbContext.itemsModels.Remove(products);
+            _applicationDbContext.SaveChanges();
+
+            return RedirectToPage(); 
             
         }
     }

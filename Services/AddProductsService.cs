@@ -26,17 +26,17 @@ namespace MyShop.Services
 
         }
 
-        public async Task<string> UploadFile(IFormFile file)
-            {
-                var filePath = Path.Combine(environment1.ContentRootPath, @"wwwroot\Images", file.FileName);
+        // public async Task<string> UploadFile(IFormFile file)
+        //     {
+        //         var filePath = Path.Combine(environment1.ContentRootPath, @"wwwroot\Images", file.FileName);
 
-                using var fileSream = new FileStream(filePath, FileMode.Create);
+        //         using var fileSream = new FileStream(filePath, FileMode.Create);
 
-                await file.CopyToAsync(fileSream);
+        //         await file.CopyToAsync(fileSream);
 
-                return filePath;
+        //         return filePath;
                 
-            }
+        //     }
         public async Task<(List<ItemsModel> itemsModels, Pagination Pagination)> FetchProductsAsync(int currentPage, int pageSize)
         {
            int totalItems = await _applicationDbContext.itemsModels.CountAsync();

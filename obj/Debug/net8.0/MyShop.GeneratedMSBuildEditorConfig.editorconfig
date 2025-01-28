@@ -38,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[B:/DOT NET CORE/E-Commerce/MyShop/Pages/Products/AdminInterface.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQWRtaW5JbnRlcmZhY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[B:/DOT NET CORE/E-Commerce/MyShop/Pages/Products/AdminProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQWRtaW5Qcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [B:/DOT NET CORE/E-Commerce/MyShop/Pages/Products/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

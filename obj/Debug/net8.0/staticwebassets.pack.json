@@ -5,8 +5,24 @@
       "PackagePath": "staticwebassets\\MyShop.bundle.scp.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\Lexu Lx.jpeg",
-      "PackagePath": "staticwebassets\\Images\\Lexu Lx.jpeg"
+      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\0b9c6caa-db27-4696-8759-8caae83dee85.jpeg",
+      "PackagePath": "staticwebassets\\Images\\0b9c6caa-db27-4696-8759-8caae83dee85.jpeg"
+    },
+    {
+      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\2a263d25-277e-4638-8cda-523340b56ccb.jpeg",
+      "PackagePath": "staticwebassets\\Images\\2a263d25-277e-4638-8cda-523340b56ccb.jpeg"
+    },
+    {
+      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\3bf2c18d-d1b0-47dd-a547-37a1eb1fda6e.jpeg",
+      "PackagePath": "staticwebassets\\Images\\3bf2c18d-d1b0-47dd-a547-37a1eb1fda6e.jpeg"
+    },
+    {
+      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\776b0274-996c-4c3d-ab82-1970543ef12c.jpeg",
+      "PackagePath": "staticwebassets\\Images\\776b0274-996c-4c3d-ab82-1970543ef12c.jpeg"
+    },
+    {
+      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg",
+      "PackagePath": "staticwebassets\\Images\\816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg"
     },
     {
       "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\css\\site.css",

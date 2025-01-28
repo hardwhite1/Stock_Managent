@@ -1,16 +1,16 @@
-﻿@page
-@using MyShop.Models
+@page
+
 @model Pages.Products.ProductsModel
+@using MyShop.Models
 
 @{
-    ViewData["Title"] = "Product Creation";
+    ViewData["Title"] = "Products Creation";
 }
-   
-        <img src="@Model.FilePath" alt="Image unavailable" />
-    
+
 
 @section Scripts{
     @await Html.PartialAsync("_AddProductsPartial", new ItemsModel())
-     <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial"></partial>
+
 }
 

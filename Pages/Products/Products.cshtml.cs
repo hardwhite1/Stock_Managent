@@ -11,29 +11,52 @@ namespace MyShop.Pages.Products
     public class ProductsModel : PageModel
     {
         private readonly IAddProducts _addProducts;
-        public ProductsModel(IAddProducts addProducts)
+
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public ProductsModel(IAddProducts addProducts, IWebHostEnvironment webHostEnvironment)
         {
             _addProducts = addProducts;
+            _webHostEnvironment = webHostEnvironment;
         }
+        [BindProperty]
 
-        public string FilePath { get;  set; }
+        public IFormFile ImageFile  { get;  set; }
 
         public void OnGet()
         {
             
         }
-        public async Task<IActionResult> OnPostAsync(ItemsModel itemsModel, IFormFile file)
+        public async Task<IActionResult> OnPostAsync(ItemsModel itemsModel)
         {
-
-            if(file != null)
+            if(ImageFile != null)
             {
-                           
-             FilePath = await _addProducts.UploadFile(file);
+                // Define folder where images will be stored
+                var upLoadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images");
+
+                Directory.CreateDirectory(upLoadsFolder);
+
+                // Create a unique file name for the uploaded image
+                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(ImageFile.FileName);
+
+                // DEfine full path to save the file
+                var filePath = Path.Combine(upLoadsFolder, uniqueFileName);
+
+                //save file to the server
+                using(var fileSream = new FileStream(filePath, FileMode.Create))
+                {
+                    await ImageFile.CopyToAsync(fileSream);
+                }
+                // set the ImagePath property to the relative path of the uploaded image
+                itemsModel.ImagePath = $"/Images/{uniqueFileName}";
             }
 
+          
             if(!ModelState.IsValid)
             {
-                return RedirectToPage("/Index");
+                foreach(var error in ModelState.Values.SelectMany(p => p.Errors))
+                {
+                    Console.WriteLine(error.ErrorMessage);
+                }
             }
 
             var successful = await _addProducts.AddProductsAsync(itemsModel);

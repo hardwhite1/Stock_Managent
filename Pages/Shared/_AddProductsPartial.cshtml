@@ -2,7 +2,7 @@
 
 <div class="form-container">
     <h1>Product Creation</h1>
-    <form asp-action="" method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" onsubmit="return confirm('Create new product?');">
     
         <div>
             <label asp-for="Name">Product-Name:</label>
@@ -26,7 +26,7 @@
         </div>
         <div>
             <label class="form-label">Upload Image</label>
-            <input type="file" name="file" class="form-control">
+            <input type="file" name="ImageFile" id="Image" class="form-control">
         </div>
 
         <div>

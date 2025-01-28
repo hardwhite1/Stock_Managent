@@ -14,6 +14,7 @@ namespace MyShop.Models
         public string Name { get; set; }
 
         [Required]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Price Must be grater than zero")]
         public float Price { get; set; }
 
         [Required]
@@ -21,5 +22,8 @@ namespace MyShop.Models
         public string Description { get; set; }
 
         public float UnitsAvailable { get; set; }
+
+        [Required]
+        public string ImagePath { get; set; }
     }
 }
