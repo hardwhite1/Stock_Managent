@@ -34,7 +34,7 @@ namespace MyShop.Pages.Products
             
         }
 
-        public IActionResult OnPostDelete( Guid id)
+        public IActionResult OnPostDelete(Guid id)
         {
             // find product by Id
             var products =  _applicationDbContext.itemsModels.FirstOrDefault(p => p.Id == id);

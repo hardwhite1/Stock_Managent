@@ -20,11 +20,19 @@
                 <p><strong>Product-Price:</strong>@products.Price</p>
                 <p><strong>Description:</strong>@products.Description</p>
                 <p><strong>Remaining-Units:</strong>@products.UnitsAvailable</p>
+
+                <form method="post" asp-page-handler="Delete" onsubmit="return confirm('Are you sure you want to delete this product?')">
+                    <input type="hidden" name="id" value="@products.Id" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
             </div>
             
         </div> 
              
     }
+    <div>
+        
+    </div>
  
 </div>
 <div class="pagination">
