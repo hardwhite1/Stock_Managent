@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyShop.Data;
 
@@ -10,9 +11,11 @@ using MyShop.Data;
 namespace MyShop.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250202152229_CartModel")]
+    partial class CartModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
@@ -215,9 +218,9 @@ namespace MyShop.Data.Migrations
 
             modelBuilder.Entity("MyShop.Models.CartItemsModel", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("INTEGER");
@@ -229,7 +232,7 @@ namespace MyShop.Data.Migrations
 
                     b.HasIndex("itemsModelId");
 
-                    b.ToTable("cartItemsModel");
+                    b.ToTable("cartItemsModels");
                 });
 
             modelBuilder.Entity("MyShop.Models.ItemsModel", b =>

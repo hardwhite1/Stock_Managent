@@ -3024,11 +3024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\MyShop.csproj",
+      "projectUniqueName": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\MyShop.csproj",
       "projectName": "MyShop",
-      "projectPath": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\MyShop.csproj",
+      "projectPath": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\MyShop.csproj",
       "packagesPath": "C:\\Users\\Jack\\.nuget\\packages\\",
-      "outputPath": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\obj\\",
+      "outputPath": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jack\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,267 +1,267 @@
 {
   "Files": [
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyShop.bundle.scp.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyShop.bundle.scp.css",
       "PackagePath": "staticwebassets\\MyShop.bundle.scp.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\0b9c6caa-db27-4696-8759-8caae83dee85.jpeg",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\0b9c6caa-db27-4696-8759-8caae83dee85.jpeg",
       "PackagePath": "staticwebassets\\Images\\0b9c6caa-db27-4696-8759-8caae83dee85.jpeg"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\2a263d25-277e-4638-8cda-523340b56ccb.jpeg",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\2a263d25-277e-4638-8cda-523340b56ccb.jpeg",
       "PackagePath": "staticwebassets\\Images\\2a263d25-277e-4638-8cda-523340b56ccb.jpeg"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\3bf2c18d-d1b0-47dd-a547-37a1eb1fda6e.jpeg",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\3bf2c18d-d1b0-47dd-a547-37a1eb1fda6e.jpeg",
       "PackagePath": "staticwebassets\\Images\\3bf2c18d-d1b0-47dd-a547-37a1eb1fda6e.jpeg"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\776b0274-996c-4c3d-ab82-1970543ef12c.jpeg",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\776b0274-996c-4c3d-ab82-1970543ef12c.jpeg",
       "PackagePath": "staticwebassets\\Images\\776b0274-996c-4c3d-ab82-1970543ef12c.jpeg"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg",
       "PackagePath": "staticwebassets\\Images\\816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "B:\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

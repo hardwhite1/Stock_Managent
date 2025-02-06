@@ -19,7 +19,10 @@
                 <p><strong>Product-Price:</strong>@products.Price</p>
                 <p><strong>Description:</strong>@products.Description</p>
                 <p><strong>Remaining-Units:</strong>@products.UnitsAvailable</p>
-                <button class="btn btn-success">Add to Cart</button>
+                <form method="post" asp-page="/Cart" asp-page-handler="Add">
+                    <input type="hidden" name="productId" value="@products.Id">
+                    <button type="submit">Add to Cart</button>
+                </form>>
             </div>
             
         </div> 
