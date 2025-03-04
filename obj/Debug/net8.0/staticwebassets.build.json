@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+CGbch+aKrVxInpTRzH8KiYsIdUvm1dN7avyRKum2yU=",
+  "Hash": "jmPzmR8Q7VkVEpk6xkJsfmHZc++ogkdx5uCAPzNB7/c=",
   "Source": "MyShop",
   "BasePath": "_content/MyShop",
   "Mode": "Default",
@@ -1252,12 +1252,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\0b9c6caa-db27-4696-8759-8caae83dee85.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\2a263d25-277e-4638-8cda-523340b56ccb.jpeg",
+      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\2bd06050-f4e2-46ba-a464-f5310acb4c32.jpeg",
       "SourceId": "MyShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\",
       "BasePath": "_content/MyShop",
-      "RelativePath": "Images/2a263d25-277e-4638-8cda-523340b56ccb.jpeg",
+      "RelativePath": "Images/2bd06050-f4e2-46ba-a464-f5310acb4c32.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1268,7 +1268,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\2a263d25-277e-4638-8cda-523340b56ccb.jpeg"
+      "OriginalItemSpec": "wwwroot\\Images\\2bd06050-f4e2-46ba-a464-f5310acb4c32.jpeg"
     },
     {
       "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\3bf2c18d-d1b0-47dd-a547-37a1eb1fda6e.jpeg",
@@ -1290,12 +1290,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\3bf2c18d-d1b0-47dd-a547-37a1eb1fda6e.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\776b0274-996c-4c3d-ab82-1970543ef12c.jpeg",
+      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\66e90078-2c3b-4579-9db9-0d02f075b3ab.jpeg",
       "SourceId": "MyShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\",
       "BasePath": "_content/MyShop",
-      "RelativePath": "Images/776b0274-996c-4c3d-ab82-1970543ef12c.jpeg",
+      "RelativePath": "Images/66e90078-2c3b-4579-9db9-0d02f075b3ab.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1306,15 +1306,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\776b0274-996c-4c3d-ab82-1970543ef12c.jpeg"
+      "OriginalItemSpec": "wwwroot\\Images\\66e90078-2c3b-4579-9db9-0d02f075b3ab.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg",
+      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\a861539a-4f29-409c-9432-857079738a52.jpeg",
       "SourceId": "MyShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\",
       "BasePath": "_content/MyShop",
-      "RelativePath": "Images/816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg",
+      "RelativePath": "Images/a861539a-4f29-409c-9432-857079738a52.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1325,7 +1325,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\816b8ab6-52b8-46b4-af58-a8d770d33c9b.jpeg"
+      "OriginalItemSpec": "wwwroot\\Images\\a861539a-4f29-409c-9432-857079738a52.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\ddb2e161-461d-42aa-b3fc-4b77d45c57aa.jpeg",
+      "SourceId": "MyShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\",
+      "BasePath": "_content/MyShop",
+      "RelativePath": "Images/ddb2e161-461d-42aa-b3fc-4b77d45c57aa.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ddb2e161-461d-42aa-b3fc-4b77d45c57aa.jpeg"
     },
     {
       "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\js\\site.js",

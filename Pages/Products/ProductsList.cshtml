@@ -1,4 +1,5 @@
 @page
+
 @model Pages.Products.ProductsListModel
 
 @{
@@ -7,44 +8,49 @@
 <script src="/~/css/site.css/"></script>
 
 <div class="product-grid">
-    @foreach(var products in Model.itemsModels)
-    {
-        <div class="product-item">
-            <div class="product-image">
 
-            </div>
-            <div class="product-info">
-                <img src="@products.ImagePath" alt="@products.Name">
-                <h4><strong>Product-Name:</strong>@products.Name</h4>
-                <p><strong>Product-Price:</strong>@products.Price</p>
-                <p><strong>Description:</strong>@products.Description</p>
-                <p><strong>Remaining-Units:</strong>@products.UnitsAvailable</p>
-                <form method="post" asp-page="/Cart" asp-page-handler="Add">
-                    <input type="hidden" name="productId" value="@products.Id">
-                    <button type="submit">Add to Cart</button>
-                </form>>
-            </div>
+        @foreach(var products in Model.itemsModel)
+        {
+            <div class="product-item">
+                <div class="product-info">
+                    <img src="@products.ImagePath" alt="@products.Name">
+                    <h4><strong>Product-Name:</strong>@products.Name</h4>
+                    <p><strong>Product-Price:</strong>@products.Price</p>
+                    <p><strong>Description:</strong>@products.Description</p>
+                    <p><strong>Remaining-Units:</strong>@products.UnitsAvailable</p>
+
+                    <form method="post" asp-page="/Products/CartPage" asp-page-handler="Add">
+                        <input type="hidden" name="id" value="@products.Id" />
+                        <button type="submit" class="btn btn-success">Add to Cart</button>
+                    </form>
+                    
+                </div>
+                
+            </div> 
             
-        </div> 
-             
-    }
- 
+        }
+    
+      
 </div>
 <div class="pagination">
-    @if (Model.Pagination.HasPreviousPage)
+    @if (Model.Pagination != null && Model.Pagination.HasPreviousPage)
     {
         <a asp-page="./ProductsList" asp-route-currentPage="@(Model.Pagination.CurrentPage - 1)"
-        asp-route-pageSize="@Model.Pagination.PageSize">Previous
-        </a>
+           asp-route-pageSize="@Model.Pagination.PageSize">Previous</a>
     }
 
-    Page @Model.Pagination.CurrentPage of @Model.Pagination.TotalPages
+    @if (Model.Pagination != null)
+    {
+        <span>Page @Model.Pagination.CurrentPage of @Model.Pagination.TotalPages</span>
+    }
+    else
+    {
+        <span>Page 1 of 1</span>
+    }
 
-    @if (Model.Pagination.HasNextPage)
+    @if (Model.Pagination != null && Model.Pagination.HasNextPage)
     {
         <a asp-page="./ProductsList" asp-route-currentPage="@(Model.Pagination.CurrentPage + 1)"
-        asp-route-pageSize="@Model.Pagination.PageSize">Next
-        </a>
+           asp-route-pageSize="@Model.Pagination.PageSize">Next</a>
     }
-
 </div>

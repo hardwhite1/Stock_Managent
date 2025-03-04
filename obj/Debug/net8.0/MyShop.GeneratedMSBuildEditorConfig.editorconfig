@@ -46,12 +46,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQWRtaW5Qcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jack/Desktop/Disk B/DOT NET CORE/E-Commerce/MyShop/Pages/Products/Products.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcUHJvZHVjdHMuY3NodG1s
+[C:/Users/Jack/Desktop/Disk B/DOT NET CORE/E-Commerce/MyShop/Pages/Products/CartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ2FydFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jack/Desktop/Disk B/DOT NET CORE/E-Commerce/MyShop/Pages/Products/ProductsCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcUHJvZHVjdHNDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jack/Desktop/Disk B/DOT NET CORE/E-Commerce/MyShop/Pages/Products/ProductsList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcUHJvZHVjdHNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jack/Desktop/Disk B/DOT NET CORE/E-Commerce/MyShop/Pages/Products/test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcdGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jack/Desktop/Disk B/DOT NET CORE/E-Commerce/MyShop/Pages/Shared/_AddProductsPartial.cshtml]

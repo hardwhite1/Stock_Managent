@@ -15,6 +15,12 @@ namespace MyShop.Services
             CurrentPage = currentPage < 1 ? 1 : currentPage;
             PageSize = pageSize;
         }
+
+        public Pagination()
+        {
+        }
+
+
         public bool HasPreviousPage => CurrentPage > 1;
         public bool HasNextPage => CurrentPage < TotalPages;
     }

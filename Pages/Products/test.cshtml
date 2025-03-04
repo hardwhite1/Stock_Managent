@@ -1,0 +1,41 @@
+@* @page
+
+@model MyApp.Namespace.CartPageModel
+@using MyShop.Models
+
+@{
+    ViewData["Title"] = "Available Products";
+}
+<script src="/~/css/site.css/"></script>
+
+<div class="product-grid">
+    <p>Hello</p>
+
+
+    @foreach(var products in Model.itemsModel)
+    {
+        <div class="product-item">
+            <div class="product-image">
+
+            </div>
+            <div class="product-info">
+                <img src="@products.ImagePath" alt="@products.Name">
+                <h4><strong>Product-Name:</strong>@products.Name</h4>
+                <p><strong>Product-Price:</strong>@products.Price</p>
+                <p><strong>Description:</strong>@products.Description</p>
+                <p><strong>Remaining-Units:</strong>@products.UnitsAvailable</p>
+                <form method="post" asp-page="/CartPage" asp-page-handler="Add">
+                    <input type="hidden" name="id" value="@products.Id">
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+                @* @await Html.PartialAsync("_CartPartial", Model.itemsModel) 
+                
+            </div>
+            
+        </div> 
+            
+    }
+
+  
+     
+</div> *@

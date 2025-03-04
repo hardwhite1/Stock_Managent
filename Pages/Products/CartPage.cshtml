@@ -1,0 +1,46 @@
+﻿@page
+@model MyApp.Namespace.CartPageModel
+
+
+@{
+    ViewData["Title"] = "Cart Items";
+}
+
+<h2>Shopping Cart</h2>
+
+@if(Model.cartItems.Count == 0)
+{
+    <p>Your Cart is empty</p>
+}
+else
+{
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.cartItems)
+            {
+                <tr>
+                    <td>@item.itemsModel.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.itemsModel.Price</td>
+                    <td>$@(item.Quantity * item.itemsModel.Price)</td>
+                    <td>
+                        <form method="post" asp-page="/Cart" asp-page-handler="Remove">
+                            <input type="hidden" name="Id" value="@item.itemsModel.Id" />
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Products/ProductsList">Continue Shopping</a>
+}

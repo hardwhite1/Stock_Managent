@@ -8,12 +8,12 @@ using MyShop.Services;
 namespace MyShop.Pages.Products
 {
     [Authorize(Roles = "Admin")]
-    public class ProductsModel : PageModel
+    public class ProductsCreateModel : PageModel
     {
         private readonly IAddProducts _addProducts;
 
         private readonly IWebHostEnvironment _webHostEnvironment;
-        public ProductsModel(IAddProducts addProducts, IWebHostEnvironment webHostEnvironment)
+        public ProductsCreateModel(IAddProducts addProducts, IWebHostEnvironment webHostEnvironment)
         {
             _addProducts = addProducts;
             _webHostEnvironment = webHostEnvironment;

@@ -1,6 +1,4 @@
-using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
+
 using System.ComponentModel.DataAnnotations;
 
 namespace MyShop.Models
@@ -11,7 +9,7 @@ namespace MyShop.Models
 
         [Required]
         [StringLength(6)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [Required]
         [Range(0.01, double.MaxValue, ErrorMessage = "Price Must be grater than zero")]
@@ -19,11 +17,16 @@ namespace MyShop.Models
 
         [Required]
         [StringLength(100)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         public float UnitsAvailable { get; set; }
 
         [Required]
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
+
+        // public static implicit operator LinkedList<object>(ItemsModel v)
+        // {
+        //     throw new NotImplementedException();
+        // }
     }
 }

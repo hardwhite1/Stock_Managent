@@ -19,25 +19,34 @@ namespace MyShop.Pages.Products
             _applicationDbContext = applicationDbContext;
         }
     
-        public IList<ItemsModel> itemsModels { get; set; }
-        public Pagination Pagination { get; set; }
+        
+        
+        public List<ItemsModel> itemsModel { get; set; } = new List<ItemsModel>(); // Default to empty list
+        public Pagination Pagination { get; set; } = new Pagination(); // Default to empty pagination
         public async Task OnGet(int currentPage = 1, int pageSize = 8)
         {
-            var result = await _addProducts.FetchProductsAsync(currentPage, pageSize);
-        
-            itemsModels = result.itemsModels;
-            Pagination = result.Pagination;
+            try
+            {
+                var result = await _addProducts.FetchProductsAsync(currentPage, pageSize);
+                itemsModel = result.itemsModel ?? new List<ItemsModel>();
+                Pagination = result.Pagination ?? new Pagination { CurrentPage = 1, PageSize = pageSize, TotalItems = 0 };
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching products: {ex.Message}");
+                itemsModel = new List<ItemsModel>();
+                Pagination = new Pagination { CurrentPage = 1, PageSize = pageSize, TotalItems = 0 };
+            }
         }
         public void  OnPost()
         {
-           
             
         }
 
         public IActionResult OnPostDelete(Guid id)
         {
             // find product by Id
-            var products =  _applicationDbContext.itemsModels.FirstOrDefault(p => p.Id == id);
+            var products =  _applicationDbContext.itemsModel.FirstOrDefault(p => p.Id == id);
 
             if(products == null)
             {
@@ -55,11 +64,12 @@ namespace MyShop.Pages.Products
                 }
             }
             // Remove the product from the database
-            _applicationDbContext.itemsModels.Remove(products);
+            _applicationDbContext.itemsModel.Remove(products);
             _applicationDbContext.SaveChanges();
 
             return RedirectToPage(); 
             
         }
+        
     }
 }

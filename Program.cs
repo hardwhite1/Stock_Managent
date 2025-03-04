@@ -29,6 +29,10 @@ builder.Services.ConfigureApplicationCookie(options=>
 });
 builder.Services.AddScoped<IAddProducts, AddProductsService>();
 
+builder.Services.AddSession();
+
+builder.Services.AddDistributedMemoryCache();
+
 
 var app = builder.Build();
 // Initialize roles
@@ -51,7 +55,10 @@ else
     app.UseHsts();
 }
 
+app.UseSession();
+
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();

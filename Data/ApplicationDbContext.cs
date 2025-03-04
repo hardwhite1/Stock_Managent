@@ -11,6 +11,7 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
-    public DbSet<ItemsModel> itemsModels{ get; set; }
+    public DbSet<ItemsModel> itemsModel{ get; set; }
+
 
 }

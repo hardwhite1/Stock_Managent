@@ -139,7 +139,6 @@ B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref\MyShop.dll
 B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.sourcelink.json
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\appsettings.json
-C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\app.db
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.staticwebassets.runtime.json
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.exe
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.deps.json
@@ -276,3 +275,4 @@ C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.pdb
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.genruntimeconfig.cache
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref\MyShop.dll
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\app.db

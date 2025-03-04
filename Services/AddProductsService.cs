@@ -18,7 +18,7 @@ namespace MyShop.Services
         {
             itemsModel.Id = Guid.NewGuid();
 
-            _applicationDbContext.itemsModels.Add(itemsModel);
+            _applicationDbContext.itemsModel.Add(itemsModel);
 
             var saveResult = await _applicationDbContext.SaveChangesAsync();
             
@@ -37,13 +37,13 @@ namespace MyShop.Services
         //         return filePath;
                 
         //     }
-        public async Task<(List<ItemsModel> itemsModels, Pagination Pagination)> FetchProductsAsync(int currentPage, int pageSize)
+        public async Task<(List<ItemsModel> itemsModel, Pagination Pagination)> FetchProductsAsync(int currentPage, int pageSize)
         {
-           int totalItems = await _applicationDbContext.itemsModels.CountAsync();
+           int totalItems = await _applicationDbContext.itemsModel.CountAsync();
 
            var pagination = new Pagination(totalItems, currentPage, pageSize);
            
-           var products = await _applicationDbContext.itemsModels
+           var products = await _applicationDbContext.itemsModel
 
             .Skip(pagination.StartIndex)
 
