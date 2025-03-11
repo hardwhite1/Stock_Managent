@@ -20,5 +20,5 @@ This is a simple shopping cart implementation using **ASP.NET Core Razor Pages**
 ### 1. Clone the Repository
 
 ```sh
-git clone 
+git clone  https://github.com/hardwhite1/Stock_Managent.git
 cd razor-cart
