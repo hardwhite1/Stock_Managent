@@ -33,6 +33,8 @@ builder.Services.AddSession();
 
 builder.Services.AddDistributedMemoryCache();
 
+builder.Services.AddHttpClient<ExchangeRatesService>();
+
 
 var app = builder.Build();
 // Initialize roles

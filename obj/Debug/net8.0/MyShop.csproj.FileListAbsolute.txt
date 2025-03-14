@@ -276,3 +276,4 @@ C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyS
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.genruntimeconfig.cache
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref\MyShop.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\app.db
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Newtonsoft.Json.dll
