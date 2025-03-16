@@ -7,5 +7,7 @@ namespace MyShop.Models
         public string? Base { get; set; }
 
         public Dictionary<string, decimal>? Rates { get; set; }
+
+        
     }
 }

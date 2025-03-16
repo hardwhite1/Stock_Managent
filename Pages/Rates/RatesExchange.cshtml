@@ -1,0 +1,26 @@
+﻿@page
+@model Pages.Rates.RatesExchangeModel
+@{
+    ViewData["Title"] = "Exchange Rates";
+}
+
+<h2>Exchange Rates (Base: @Model.ExchangeRates.Base)</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var rate in Model.ExchangeRates.Rates)
+        {
+            <tr>
+                <td>@rate.Key</td>
+                <td>@rate.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
