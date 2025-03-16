@@ -4,6 +4,45 @@
     ViewData["Title"] = "Exchange Rates";
 }
 
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+
 <h2>Exchange Rates (Base: @Model.ExchangeRates.Base)</h2>
 
 <table class="table">
