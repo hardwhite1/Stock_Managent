@@ -5,31 +5,36 @@
     ViewData["Title"] = "Currency Convertion form";
 }
 
-<h2>Currency Convertion</h2>
+<div class="container">
+    <h2>Currency Convertion</h2>
 
-<form method="post">
-    <div class="form-group">
-        <label asp-for="currencyConversion.Amount">Amount</label>
-        <input asp-for="currencyConversion.Amount" class="form-controll" />
-        <span asp-validation-for="currencyConversion.Amount" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="currencyConversion.BaseCurrency">Base Currency</label>
-        <input asp-for="currencyConversion.BaseCurrency" class="form-controll" />
-        <span asp-validation-for="currencyConversion.BaseCurrency" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="currencyConversion.TargetCurrency">Target Currency</label>
-        <input asp-for="currencyConversion.TargetCurrency" class="form-controll" />
-        <span asp-validation-for="currencyConversion.TargetCurrency" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-success">Convert</button>
-</form>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="currencyConversion.Amount">Amount</label>
+            <input asp-for="currencyConversion.Amount" class="form-controll" required/>
+            <span asp-validation-for="currencyConversion.Amount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="currencyConversion.BaseCurrency">Base Currency</label>
+            <input asp-for="currencyConversion.BaseCurrency" class="form-controll" required/>
+            <span asp-validation-for="currencyConversion.BaseCurrency" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="currencyConversion.TargetCurrency">Target Currency</label>
+            <input asp-for="currencyConversion.TargetCurrency" class="form-controll" required/>
+            <span asp-validation-for="currencyConversion.TargetCurrency" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Convert</button>
+    </form>
 
-@if(@Model.currencyConversion != null && @Model.currencyConversion.ConvertedAmount > 0)
-{
-    <h2>Conversion result</h2>
-    <p>
-        @Model.currencyConversion.Amount @Model.currencyConversion.BaseCurrency = @Model.currencyConversion.ConvertedAmount @Model.currencyConversion.TargetCurrency
-    </p>
-}
+    @if(@Model.currencyConversion != null && @Model.currencyConversion.ConvertedAmount > 0)
+    {   
+        <div class="result">
+            <h2>Conversion result</h2>
+        <p>
+            <strong>@Model.currencyConversion.Amount @Model.currencyConversion.BaseCurrency = @Model.currencyConversion.ConvertedAmount @Model.currencyConversion.TargetCurrency</strong>
+        </p>
+        </div>
+        
+    }
+</div>
