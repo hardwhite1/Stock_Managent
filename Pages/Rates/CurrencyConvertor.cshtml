@@ -5,23 +5,88 @@
     ViewData["Title"] = "Currency Convertion form";
 }
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    @* .container {
+        width: 50%;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    } *@
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    @* input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    } *@
+
+    @* button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+       
+    } *@
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    .result {
+        margin-top: 20px;
+        padding: 15px;
+        background: #e9f5e9;
+        border: 1px solid #28a745;
+        border-radius: 5px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+</style>
+
 <div class="container">
     <h2>Currency Convertion</h2>
 
     <form method="post">
-        <div class="form-group">
+        <div>
             <label asp-for="currencyConversion.Amount">Amount</label>
-            <input asp-for="currencyConversion.Amount" class="form-controll" required/>
+            <input asp-for="currencyConversion.Amount" required/>
             <span asp-validation-for="currencyConversion.Amount" class="text-danger"></span>
         </div>
-        <div class="form-group">
+        <div>
             <label asp-for="currencyConversion.BaseCurrency">Base Currency</label>
-            <input asp-for="currencyConversion.BaseCurrency" class="form-controll" required/>
+            <input asp-for="currencyConversion.BaseCurrency" required/>
             <span asp-validation-for="currencyConversion.BaseCurrency" class="text-danger"></span>
         </div>
-        <div class="form-group">
+        <div>
             <label asp-for="currencyConversion.TargetCurrency">Target Currency</label>
-            <input asp-for="currencyConversion.TargetCurrency" class="form-controll" required/>
+            <input asp-for="currencyConversion.TargetCurrency" required/>
             <span asp-validation-for="currencyConversion.TargetCurrency" class="text-danger"></span>
         </div>
         <button type="submit" class="btn btn-success">Convert</button>
