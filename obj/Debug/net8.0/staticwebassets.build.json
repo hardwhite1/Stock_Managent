@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jmPzmR8Q7VkVEpk6xkJsfmHZc++ogkdx5uCAPzNB7/c=",
+  "Hash": "K4yX65ct+Jwpo6f77iJoQb2pFufvIq5VWokPLj5EO5k=",
   "Source": "MyShop",
   "BasePath": "_content/MyShop",
   "Mode": "Default",
@@ -1345,6 +1345,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\ddb2e161-461d-42aa-b3fc-4b77d45c57aa.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\Images\\f78f282e-2036-4302-b019-ff23836c311d.jpeg",
+      "SourceId": "MyShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\",
+      "BasePath": "_content/MyShop",
+      "RelativePath": "Images/f78f282e-2036-4302-b019-ff23836c311d.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\f78f282e-2036-4302-b019-ff23836c311d.jpeg"
     },
     {
       "Identity": "C:\\Users\\Jack\\Desktop\\Disk B\\DOT NET CORE\\E-Commerce\\MyShop\\wwwroot\\js\\site.js",
