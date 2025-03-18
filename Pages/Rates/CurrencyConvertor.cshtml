@@ -23,4 +23,13 @@
         <input asp-for="currencyConversion.TargetCurrency" class="form-controll" />
         <span asp-validation-for="currencyConversion.TargetCurrency" class="text-danger"></span>
     </div>
+    <button type="submit" class="btn btn-success">Convert</button>
 </form>
+
+@if(@Model.currencyConversion != null && @Model.currencyConversion.ConvertedAmount > 0)
+{
+    <h2>Conversion result</h2>
+    <p>
+        @Model.currencyConversion.Amount @Model.currencyConversion.BaseCurrency = @Model.currencyConversion.ConvertedAmount @Model.currencyConversion.TargetCurrency
+    </p>
+}
