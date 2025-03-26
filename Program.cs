@@ -100,3 +100,5 @@ async Task AssignAdminRole(IServiceProvider serviceProvider)
         await userManager.AddToRoleAsync(user, "Admin");
     } 
 }
+
+
