@@ -35,6 +35,8 @@ builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddHttpClient<ExchangeRatesService>();
 
+builder.Services.AddScoped<StripeService>();
+
 
 var app = builder.Build();
 // Initialize roles

@@ -3,6 +3,7 @@ using Stripe.Checkout;
 using Microsoft.Extensions.Configuration;   
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Stripe.V2;
 
 namespace MyShop.Services
 {
@@ -16,35 +17,50 @@ namespace MyShop.Services
             StripeConfiguration.ApiKey = _configuration["Stripe:SecretKey"];
         }
 
-        public async Task<String> CreateCheckOutSession(decimal amount, string currency, string cancelUrl, string successUrl)
+        public async Task<String> CreateCheckOutSession(decimal amount, string currency, string? cancelUrl, string? successUrl)
         {
-            var options = new SessionCreateOptions
+            if(amount <= 0)
             {
-                PaymentMethodTypes = new List<string>{ "card" },
-
-                LineItems = new List<SessionLineItemOptions>
+                throw new ArgumentException("Amount must be greater than zero");
+            }
+            try
+            {
+                var options = new SessionCreateOptions
                 {
-                    new SessionLineItemOptions
+                    PaymentMethodTypes = new List<string>{ "card" },
+
+                    LineItems = new List<SessionLineItemOptions>
                     {
-                        PriceData = new SessionLineItemPriceDataOptions
+                        new SessionLineItemOptions
                         {
-                            Currency = currency,
-                            UnitAmount = (long)(amount * 100),
-                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            PriceData = new SessionLineItemPriceDataOptions
                             {
-                                Name = "Purchase from Hardwhite Enterprise"
-                            }
-                        },
-                        Quantity = 1
-                    }
-                },
-                Mode = "payment",
-                SuccessUrl = successUrl,
-                CancelUrl = cancelUrl,  
-            };
-            var service = new SessionService();
-            Session session = await service.CreateAsync(options);
-            return session.Url;
+                                Currency = currency,
+                                UnitAmount = (long)(amount * 100),
+                                ProductData = new SessionLineItemPriceDataProductDataOptions
+                                {
+                                    Name = "Purchase from Hardwhite Enterprise"
+                                }
+                            },
+                            Quantity = 1
+                        }
+                    },
+                    Mode = "payment",
+                    SuccessUrl = successUrl,
+                    CancelUrl = cancelUrl,  
+                };
+                var service = new SessionService();
+                Session session = await service.CreateAsync(options);
+                return session.Url;
+            }
+            catch (StripeException ex)
+            {
+                Console.WriteLine($"Stripe Error:{ex.Message}");
+
+                throw;
+            }
+
+            
         }
     }
 }
