@@ -21,9 +21,9 @@ namespace MyApp.Namespace
 
         public async Task<IActionResult> OnPost()
         {
-            var successUrl = Url.Page("/PaymentSuccess", null, null, Request.Scheme);
+            var successUrl = Url.Page("/Payments/PaymentSuccess", null, null, Request.Scheme);
 
-            var cancelUrl = Url.Page("/CheckOut", null, null, Request.Scheme);
+            var cancelUrl = Url.Page("/Payments/CheckOut", null, null, Request.Scheme);
 
             var checkOutUrl = await _stripeService.CreateCheckOutSession(Amount, "usd", cancelUrl, successUrl);
 
