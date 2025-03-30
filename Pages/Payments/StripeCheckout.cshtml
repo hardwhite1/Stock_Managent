@@ -1,5 +1,6 @@
 ﻿@page
 @model MyApp.Namespace.StripeCheckoutModel
+@using MyShop.Models
 @{
     ViewData["Title"] = "Payment Form";
 }
@@ -10,5 +11,5 @@
     <label asp-for="Amount">Amount($):</label>
     <input asp-for="Amount" class="form-controll" required>
     <span asp-asp-validation-for="Amount" class="text-danger"></span>
-    <button type="submit" class="btn btn-success">Pay via Stripe</button>
+    <button type="submit" class="btn btn-success">Submit</button>
 </form>

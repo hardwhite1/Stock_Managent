@@ -21,7 +21,9 @@ else
                 <th>Quantity</th>
                 <th>Price</th>
                 <th>Subtotal</th>
+                <th>Payment</th>
                 <th>Action</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -35,6 +37,9 @@ else
                     <td>
                         <form method="post" asp-page="/Products/CartPage" asp-page-handler="Remove">
                             <input type="hidden" name="Id" value="@item.itemsModel.Id" />
+                            <a href="/Payments/StripeCheckout/">
+                                <button type="button" class="btn btn-success">Pay Via Skype</button>
+                            </a>
                             <button type="submit" class="btn btn-danger">Remove</button>
                         </form>
                     </td>
