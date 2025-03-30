@@ -1,0 +1,127 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container for the confirmation card */
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Card styling */
+.confirmation-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Success icon styling */
+.icon-success {
+    margin-bottom: 20px;
+}
+
+.icon-success svg {
+    color: #28a745; /* Green for success */
+}
+
+/* Heading styling */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Message styling */
+.message {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Thank you message */
+.thank-you {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.btn-home {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-home:active {
+    transform: translateY(0);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .confirmation-card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+
+    .thank-you {
+        font-size: 14px;
+    }
+
+    .btn-home {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
