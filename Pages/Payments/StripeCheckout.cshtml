@@ -7,9 +7,16 @@
 
 <h2>Payment Form</h2>
 
-<form method="post">
-    <label asp-for="Amount">Amount($):</label>
-    <input asp-for="Amount" class="form-controll" required>
-    <span asp-asp-validation-for="Amount" class="text-danger"></span>
-    <button type="submit" class="btn btn-success">Submit</button>
-</form>
+@foreach(var items in Model.cartItems)
+{
+    <form method="post">
+
+        <label asp-for="Amount">Amount($):</label>
+        <input asp-for="Amount" class="form-controll" readonly value="@(items.Quantity * items.itemsModel.Price)">
+        <span asp-asp-validation-for="Amount" class="text-danger"></span>
+        <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+}
+
+

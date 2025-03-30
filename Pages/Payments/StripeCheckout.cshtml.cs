@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyShop.Services;
+using MyShop.Models;
+using System.Text.Json;
 namespace MyApp.Namespace
 {
     public class StripeCheckoutModel : PageModel
@@ -12,11 +14,14 @@ namespace MyApp.Namespace
             _stripeService = stripeService;
         }
 
+        public List<CartItem> cartItems { get; set; }
+
         //Model binding
         [BindProperty]
         public decimal Amount { get; set; }
         public void OnGet()
         {
+            LoadCart();
         }
 
         public async Task<IActionResult> OnPost()
@@ -28,6 +33,16 @@ namespace MyApp.Namespace
             var checkOutUrl = await _stripeService.CreateCheckOutSession(Amount, "usd", cancelUrl, successUrl);
 
             return Redirect(checkOutUrl);
+        }
+
+        private void LoadCart()
+        {
+            var cartJson = HttpContext.Session.GetString("cartItems");
+
+            if (!string.IsNullOrEmpty(cartJson))
+            {
+                cartItems = JsonSerializer.Deserialize<List<CartItem>>(cartJson) ?? new();
+            }
         }
 
         

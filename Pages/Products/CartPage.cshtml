@@ -38,7 +38,7 @@ else
                         <form method="post" asp-page="/Products/CartPage" asp-page-handler="Remove">
                             <input type="hidden" name="Id" value="@item.itemsModel.Id" />
                             <a href="/Payments/StripeCheckout/">
-                                <button type="button" class="btn btn-success">Pay Via Skype</button>
+                                <button type="button" class="btn btn-success">Pay Via Stripe</button>
                             </a>
                             <button type="submit" class="btn btn-danger">Remove</button>
                         </form>
