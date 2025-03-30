@@ -33,7 +33,7 @@ else
                     <td>@item.itemsModel.Price</td>
                     <td>$@(item.Quantity * item.itemsModel.Price)</td>
                     <td>
-                        <form method="post" asp-page="/Cart" asp-page-handler="Remove">
+                        <form method="post" asp-page="/Products/CartPage" asp-page-handler="Remove">
                             <input type="hidden" name="Id" value="@item.itemsModel.Id" />
                             <button type="submit" class="btn btn-danger">Remove</button>
                         </form>

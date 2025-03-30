@@ -140,6 +140,7 @@ B:\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.sourcelink.json
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\appsettings.json
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.staticwebassets.runtime.json
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\app.db
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.exe
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.deps.json
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.runtimeconfig.json
@@ -168,15 +169,19 @@ C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Mic
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Stripe.net.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Composition.Convention.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -275,8 +280,3 @@ C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.pdb
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.genruntimeconfig.cache
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref\MyShop.dll
-C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\app.db
-C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Newtonsoft.Json.dll
-C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\Stripe.net.dll
-C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
