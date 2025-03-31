@@ -33,18 +33,28 @@ namespace MyShop.Services
 
         public async Task<decimal> ConvertCurrencyAsync(decimal amount, string baseCurrency, string targetCurrency)
         {
-            var exchangeRates = await GetExchangeRatesAsync(baseCurrency);
-
-            if(exchangeRates == null || !exchangeRates.Rates.ContainsKey(targetCurrency))
+            try
             {
-                throw new Exception("invalid target currency or unable to fetch exchange rates");
+                var exchangeRates = await GetExchangeRatesAsync(baseCurrency);
+
+                if(exchangeRates == null || !exchangeRates.Rates.ContainsKey(targetCurrency))
+                {
+                    throw new Exception("invalid target currency or unable to fetch exchange rates");
+                }
+                //Get the exchange rates for the target currency
+
+                decimal rate = exchangeRates.Rates[targetCurrency];
+
+                //Calculate the converted amount
+                return amount * rate;
             }
-            //Get the exchange rates for the target currency
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
 
-            decimal rate = exchangeRates.Rates[targetCurrency];
-
-            //Calculate the converted amount
-            return amount * rate;
+                throw;
+            }
+            
         }
     }
 }

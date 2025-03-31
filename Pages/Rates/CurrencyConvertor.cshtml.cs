@@ -10,7 +10,7 @@ namespace MyApp.Namespace
         private readonly ExchangeRatesService _exchangeRatesService;
 
          [BindProperty]
-        public CurrencyConversion currencyConversion { get; set; }
+        public CurrencyConversion? currencyConversion { get; set; }
 
         public CurrencyConvertorModel(ExchangeRatesService exchangeRatesService)
         {
@@ -28,7 +28,7 @@ namespace MyApp.Namespace
                 try
                 {
                     //Perform the conversion
-                    currencyConversion.ConvertedAmount = await _exchangeRatesService.ConvertCurrencyAsync(currencyConversion.Amount, currencyConversion.BaseCurrency, currencyConversion.TargetCurrency);
+                    currencyConversion!.ConvertedAmount = await _exchangeRatesService.ConvertCurrencyAsync(currencyConversion.Amount, currencyConversion.BaseCurrency, currencyConversion.TargetCurrency);
                 }
                 catch(Exception ex)
                 {
