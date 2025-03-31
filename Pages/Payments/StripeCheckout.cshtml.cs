@@ -14,7 +14,7 @@ namespace MyApp.Namespace
             _stripeService = stripeService;
         }
 
-        public List<CartItem> cartItems { get; set; }
+        public List<CartItem>? cartItems { get; set; }
 
         //Model binding
         [BindProperty]

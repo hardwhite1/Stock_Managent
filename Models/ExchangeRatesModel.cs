@@ -4,9 +4,9 @@ namespace MyShop.Models
 {
     public class ExchangeRates
     {
-        public string? Base { get; set; }
+        public required string Base { get; set; }
 
-        public Dictionary<string, decimal>? Rates { get; set; }
+        public required Dictionary<string, decimal> Rates { get; set; }
 
         
     }

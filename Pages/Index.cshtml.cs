@@ -9,7 +9,7 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
 
-    public ItemsModel itemsModel{ get; set; }
+    public ItemsModel? itemsModel{ get; set; }
 
     public IndexModel(ILogger<IndexModel> logger)
     {

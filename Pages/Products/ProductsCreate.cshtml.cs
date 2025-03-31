@@ -20,7 +20,7 @@ namespace MyShop.Pages.Products
         }
         [BindProperty]
 
-        public IFormFile ImageFile  { get;  set; }
+        public IFormFile? ImageFile  { get;  set; }
 
         public void OnGet()
         {
