@@ -14,9 +14,33 @@
         <label asp-for="Amount">Amount($):</label>
         <input asp-for="Amount" class="form-controll" readonly value="@(items.Quantity * items.itemsModel.Price)">
         <span asp-asp-validation-for="Amount" class="text-danger"></span>
+        <br>
         <button type="submit" class="btn btn-success">Submit</button>
 
     </form>
+    
+    @* <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@items.itemsModel.Name</td>
+                <td>@(items.Quantity * items.itemsModel.Price)</td>
+                <td>
+                    <form method="post" asp-asp-page="/Payments/StripeCheckout" asp-asp-page-handler="OnPost">
+                        <input type="hidden" name="Id" value="@items.itemsModel.Id" />
+                     <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table> *@
 }
 
 

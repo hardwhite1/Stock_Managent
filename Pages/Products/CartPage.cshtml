@@ -21,7 +21,7 @@ else
                 <th>Quantity</th>
                 <th>Price</th>
                 <th>Subtotal</th>
-                <th>Payment</th>
+                @* <th>Payment</th> *@
                 <th>Action</th>
                 
             </tr>
@@ -37,15 +37,17 @@ else
                     <td>
                         <form method="post" asp-page="/Products/CartPage" asp-page-handler="Remove">
                             <input type="hidden" name="Id" value="@item.itemsModel.Id" />
-                            <a href="/Payments/StripeCheckout/">
-                                <button type="button" class="btn btn-success">Pay Via Stripe</button>
-                            </a>
                             <button type="submit" class="btn btn-danger">Remove</button>
                         </form>
                     </td>
                 </tr>
             }
+            <a href="/Payments/StripeCheckout/">
+                <button type="button" class="btn btn-success">Pay Via Stripe</button>
+            </a>
+            <br>
         </tbody>
     </table>
-    <a href="/Products/ProductsList">Continue Shopping</a>
+    <br>
+    <a href="/Products/ProductsList"><butto class="btn btn-success">Continue Shopping</butto></a>
 }
