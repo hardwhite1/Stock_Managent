@@ -68,7 +68,7 @@ namespace MyApp.Namespace
             }
         }
 
-          private void SaveCart()
+        private void SaveCart()
         {
             var cartJson = JsonSerializer.Serialize(cartItems);
 

@@ -23,7 +23,7 @@ namespace MyShop.Pages.Products
         
         public List<ItemsModel> itemsModel { get; set; } = new List<ItemsModel>(); // Default to empty list
         public Pagination Pagination { get; set; } = new Pagination(); // Default to empty pagination
-        public async Task OnGet(int currentPage = 1, int pageSize = 8)
+        public async Task OnGet(int currentPage = 1, int pageSize = 4)
         {
             try
             {

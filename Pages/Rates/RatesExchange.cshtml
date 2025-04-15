@@ -43,7 +43,7 @@
 </style>
 
 
-<h2>Exchange Rates (Base: @Model.ExchangeRates.Base)</h2>
+<h2>Exchange Rates (Base: @Model.ExchangeRates?.Base)</h2>
 
 <table class="table">
     <thead>
@@ -53,7 +53,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var rate in Model.ExchangeRates.Rates)
+        @foreach(var rate in Model.ExchangeRates!.Rates)
         {
             <tr>
                 <td>@rate.Key</td>
@@ -62,4 +62,10 @@
         }
     </tbody>
 </table>
+<div class="pagination">
+@if(Model.pagination != null && Model.pagination.HasPreviousPage)
+{
+    <a asp-route="./RatesExchange" asp-route-currentPage="@(Model.pagination.currentPage - 1)">Previous Page</a>
+}
+</div>
 
