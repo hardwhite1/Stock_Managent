@@ -62,4 +62,10 @@
         }
     </tbody>
 </table>
+<div class="pagination">
+@if(Model.pagination != null && Model.pagination.HasPreviousPage)
+{
+    <a asp-route="./RatesExchange" asp-route-currentPage="@(Model.pagination.currentPage - 1)">Previous Page</a>
+}
+</div>
 
