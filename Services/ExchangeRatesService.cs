@@ -15,20 +15,42 @@ namespace MyShop.Services
             _httpClient = httpClient;
         }
 
-        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD")
+        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD", int currentPage=1 ,int pageSize=10)
         {
-            string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
-
-            HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
-
-            if(responseMessage.IsSuccessStatusCode)
+            try
             {
-                string Json = await responseMessage.Content.ReadAsStringAsync();
+                 string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
 
-                return JsonConvert.DeserializeObject<ExchangeRates>(Json);
+                 HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
+
+                if(responseMessage.IsSuccessStatusCode)
+                {
+                    string Json = await responseMessage.Content.ReadAsStringAsync();
+
+                    var exchangeRates =  JsonConvert.DeserializeObject<ExchangeRates>(Json);
+
+                    int totalItems = exchangeRates.Rates.Count;
+
+                    var paginatedRates = exchangeRates.Rates
+                    .Skip((currentPage-1) * pageSize)
+                    .Take(pageSize)
+                    .ToDictionary(kvp=> kvp.Key, kvp=>kvp.Value);
+
+                    exchangeRates.Rates = paginatedRates;
+
+                    exchangeRates.pagination = new Pagination(totalItems, currentPage, pageSize);
+
+                    return exchangeRates;
+                }
+
+            }
+            catch(Exception ex)
+            {
+                new Exception(ex.Message);
             }
 
             return null;
+           
         }
 
         public async Task<decimal> ConvertCurrencyAsync(decimal amount, string baseCurrency, string targetCurrency)
