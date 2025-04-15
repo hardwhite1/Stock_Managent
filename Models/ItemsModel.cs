@@ -8,7 +8,7 @@ namespace MyShop.Models
         public Guid Id { get; set;}
 
         [Required]
-        [StringLength(6)]
+        [StringLength(16)]
         public string? Name { get; set; }
 
         [Required]
