@@ -9,7 +9,7 @@ namespace MyShop.Models
 
         public required Dictionary<string, decimal> Rates { get; set; }
 
-        public Pagination pagination {get; set;}
+        public required Pagination pagination {get; set;}
 
         
     }

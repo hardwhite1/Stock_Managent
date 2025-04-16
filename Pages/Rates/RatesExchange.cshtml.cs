@@ -16,7 +16,7 @@ namespace MyShop.Pages.Rates
         }
         public Pagination pagination {get; set;}
 
-        public async Task OnGetAsync( int currentPage=1, int pageSize=10)
+        public async Task OnGetAsync( int currentPage = 1, int pageSize = 10)
         {
              ExchangeRates = await _exchangeRatesService.GetExchangeRatesAsync("USD", currentPage, pageSize);
 

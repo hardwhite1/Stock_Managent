@@ -15,10 +15,10 @@ namespace MyShop.Services
             _httpClient = httpClient;
         }
 
-        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD", int currentPage=1 ,int pageSize=10)
+        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD", int currentPage = 1 ,int pageSize = 10)
         {
-            try
-            {
+            // try
+            // {
                  string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
 
                  HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
@@ -38,16 +38,17 @@ namespace MyShop.Services
 
                     exchangeRates.Rates = paginatedRates;
 
-                    exchangeRates.pagination = new Pagination(totalItems, currentPage, pageSize);
+                    exchangeRates.pagination = new Pagination(
+                        totalItems : totalItems,
+                        pageSize : pageSize,
+                        currentPage : currentPage
+                    );
 
                     return exchangeRates;
                 }
 
-            }
-            catch(Exception ex)
-            {
-                new Exception(ex.Message);
-            }
+            
+            
 
             return null;
            
