@@ -6,39 +6,39 @@
 
 <style>
     table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     }
 
     th, td {
-        border: 1px solid #ddd;
-        padding: 12px;
-        text-align: left;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
     }
 
     th {
-        background-color: #4CAF50;
-        color: white;
-        text-transform: uppercase;
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
     }
 
     tr:nth-child(even) {
-        background-color: #f2f2f2;
+    background-color: #f2f2f2;
     }
 
     tr:hover {
-        background-color: #ddd;
-        transition: background-color 0.3s ease-in-out;
+    background-color: #ddd;
+    transition: background-color 0.3s ease-in-out;
     }
 
     h2 {
-        font-size: 24px;
-        color: #333;
-        text-align: center;
-        margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
     }
 </style>
 
@@ -62,4 +62,27 @@
         }
     </tbody>
 </table>
+<div class="pagination">
+    @if(Model.ExchangeRates.pagination != null && Model.ExchangeRates.pagination.HasPreviousPage)
+    {
+        <a asp-page="./RatesExchange" asp-route-currentPage="@(Model.ExchangeRates.pagination.CurrentPage - 1)">Previous</a>
+    }
+
+    @if (Model.ExchangeRates.pagination != null)
+    {
+        <span>
+            Page @(Model.ExchangeRates.pagination.CurrentPage) of @(Model.ExchangeRates.pagination.TotalPages)
+        </span>
+    }
+    else
+    {
+        <span>Page 1 of 1</span>
+    }
+
+
+    @if (Model.ExchangeRates.pagination != null && Model.ExchangeRates.pagination.HasNextPage)
+    {
+        <a asp-page="./RatesExchange" asp-route-currentPage="@(Model.ExchangeRates.pagination.CurrentPage + 1)">Next</a>
+    }
+</div>
 
