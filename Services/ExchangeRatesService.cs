@@ -15,20 +15,43 @@ namespace MyShop.Services
             _httpClient = httpClient;
         }
 
-        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD")
+        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD", int currentPage = 1 ,int pageSize = 10)
         {
-            string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
+            // try
+            // {
+                 string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
 
-            HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
+                 HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
 
-            if(responseMessage.IsSuccessStatusCode)
-            {
-                string Json = await responseMessage.Content.ReadAsStringAsync();
+                if(responseMessage.IsSuccessStatusCode)
+                {
+                    string Json = await responseMessage.Content.ReadAsStringAsync();
 
-                return JsonConvert.DeserializeObject<ExchangeRates>(Json);
-            }
+                    var exchangeRates =  JsonConvert.DeserializeObject<ExchangeRates>(Json);
+
+                    int totalItems = exchangeRates.Rates.Count;
+
+                    var paginatedRates = exchangeRates.Rates
+                    .Skip((currentPage-1) * pageSize)
+                    .Take(pageSize)
+                    .ToDictionary(kvp=> kvp.Key, kvp=>kvp.Value);
+
+                    exchangeRates.Rates = paginatedRates;
+
+                    exchangeRates.pagination = new Pagination(
+                        totalItems : totalItems,
+                        pageSize : pageSize,
+                        currentPage : currentPage
+                    );
+
+                    return exchangeRates;
+                }
+
+            
+            
 
             return null;
+           
         }
 
         public async Task<decimal> ConvertCurrencyAsync(decimal amount, string baseCurrency, string targetCurrency)

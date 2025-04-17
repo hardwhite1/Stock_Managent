@@ -14,10 +14,11 @@ namespace MyShop.Pages.Rates
         {
             _exchangeRatesService = exchangeRatesService;
         }
+        public Pagination pagination {get; set;}
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync( int currentPage = 1, int pageSize = 10)
         {
-             ExchangeRates = await _exchangeRatesService.GetExchangeRatesAsync();
+             ExchangeRates = await _exchangeRatesService.GetExchangeRatesAsync("USD", currentPage, pageSize);
 
         }
     }
