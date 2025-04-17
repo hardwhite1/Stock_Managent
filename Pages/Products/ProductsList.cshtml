@@ -31,13 +31,15 @@
         }
 
         <a href="/Rates/RatesExchange/"><button type="button" class="btn btn-success">LATEST EXCHANGE-RATES</button></a>
+        <br>
 </div>
-
+<br>
 <div class="pagination">
     @if (Model.Pagination != null && Model.Pagination.HasPreviousPage)
     {
         <a asp-page="./ProductsList" asp-route-currentPage="@(Model.Pagination.CurrentPage - 1)"
-           asp-route-pageSize="@Model.Pagination.PageSize">Previous</a>
+            asp-route-pageSize="@Model.Pagination.PageSize"><button type="button"
+                class="btn btn-success">Previous</button></a>
     }
 
     @if (Model.Pagination != null)
@@ -52,6 +54,6 @@
     @if (Model.Pagination != null && Model.Pagination.HasNextPage)
     {
         <a asp-page="./ProductsList" asp-route-currentPage="@(Model.Pagination.CurrentPage + 1)"
-           asp-route-pageSize="@Model.Pagination.PageSize">Next</a>
+            asp-route-pageSize="@Model.Pagination.PageSize"><button type="button" class="btn btn-success">Next</button></a>
     }
 </div>
