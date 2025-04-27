@@ -1,13 +1,158 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Click <a href="/Products/ProductsList">here</a> to view list of available items</p>
-    
+<!-- Custom Styles -->
+<style>
+    body {
+        background: url('https://images.unsplash.com/photo-1517949908111-4aa299f9c9a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        min-height: 100vh;
+        padding: 50px 20px;
+    }
+
+    .hero-section {
+        color: white;
+        text-align: center;
+        animation: fadeIn 1.5s ease-in;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+
+    .btn-custom {
+        background-color: #ffffff;
+        color: #2E7D32;
+        border: 2px solid white;
+        transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+        background-color: transparent;
+        color: white;
+    }
+
+    .counters {
+        margin: 60px 0;
+    }
+
+    .counter {
+        font-size: 48px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .counter-title {
+        font-size: 20px;
+        color: #cccccc;
+    }
+
+    .features-section {
+        padding: 60px 20px;
+    }
+
+    .feature-icon {
+        font-size: 48px;
+        color: #4CAF50;
+    }
+</style>
+
+<!-- Main Overlay Wrapper -->
+<div class="overlay">
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1 class="display-3 fw-bold mb-3">Welcome to Hardwhite Motor-Enterprise</h1>
+        <p class="lead mb-4">Premium Motors, Outstanding Service — Where Quality Meets Trust.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="/Products/ProductsList" class="btn btn-custom btn-lg px-4 py-2">Browse Inventory</a>
+            <a href="/Privacy" class="btn btn-outline-light btn-lg px-4 py-2">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Counters Section -->
+    <div class="container counters text-center">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="counter" data-target="500">0</div>
+                <div class="counter-title">Motors Sold</div>
+            </div>
+            <div class="col-md-4">
+                <div class="counter" data-target="1200">0</div>
+                <div class="counter-title">Happy Clients</div>
+            </div>
+            <div class="col-md-4">
+                <div class="counter" data-target="50">0</div>
+                <div class="counter-title">Awards Won</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section text-center text-white">
+        <h2 class="mb-5">Why Choose Hardwhite?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+                    <div class="card-body">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <h5 class="card-title">Top Quality</h5>
+                        <p class="card-text">We offer premium motors that meet the highest standards of quality and performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+                    <div class="card-body">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h5 class="card-title">Exceptional Support</h5>
+                        <p class="card-text">Our team is always ready to assist you with expert advice and customer care.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+                    <div class="card-body">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h5 class="card-title">Trusted & Secure</h5>
+                        <p class="card-text">With transparent policies and secure processes, you can buy with confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
+<!-- Counter Animation Script -->
+<script>
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.innerText = '0';
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const current = +counter.innerText;
+            const increment = target / 100;
+
+            if (current < target) {
+                counter.innerText = `${Math.ceil(current + increment)}`;
+                setTimeout(updateCounter, 30);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCounter();
+    });
+</script>
