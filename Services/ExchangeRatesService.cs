@@ -96,7 +96,7 @@ namespace MyShop.Services
 
                 var exchangeRates = JsonConvert.DeserializeObject<ExchangeRates?>(Json);
 
-                // var rates = exchangeRates.Rates.ToDictionary(kvp=>kvp.Key, kvp=>kvp.Value);
+                 //var rates = exchangeRates.Rates.ToDictionary(kvp=>kvp.Key, kvp=>kvp.Value);
 
                 return exchangeRates;
             }
