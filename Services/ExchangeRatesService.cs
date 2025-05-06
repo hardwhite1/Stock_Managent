@@ -1,8 +1,6 @@
 using MyShop.Models;
-using System.Net.Http;
+using System.Text.Json.Serialization;
 using Newtonsoft.Json;
-using System.Linq.Expressions;
-using System.Linq.Expressions;
 
 namespace MyShop.Services
 {
@@ -104,7 +102,7 @@ namespace MyShop.Services
                 {
                     string Json = await httpResponseMessage.Content.ReadAsStringAsync();
 
-                    var exchangeRates = JsonConvert.DeserializeObject<ExchangeRates?>(Json);
+                    var exchangeRates = Newtonsoft.Json.JsonConvert.DeserializeObject<ExchangeRates?>(Json);
 
                     //var rates = exchangeRates.Rates.ToDictionary(kvp=>kvp.Key, kvp=>kvp.Value);
 
