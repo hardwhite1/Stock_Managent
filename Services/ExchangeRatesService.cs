@@ -9,40 +9,47 @@ namespace MyShop.Services
     {
         private readonly HttpClient _httpClient;
 
+        private readonly ILogger<ExchangeRatesService> _lloger;
+
         private const string ApiKey = "263ce7ff21223c2b68e96d67";
 
-        public ExchangeRatesService(HttpClient httpClient)
+        public ExchangeRatesService(HttpClient httpClient, ILogger<ExchangeRatesService> lloger)
+        //Constructor to initialize the HttpClient and ILogger instances
+        //This constructor is used to inject the HttpClient and ILogger dependencies into the ExchangeRatesService class
+            
         {
             _httpClient = httpClient;
+
+            _lloger = lloger;
         }
 
-        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD", int currentPage = 1 ,int pageSize = 10)
+        public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency = "USD", int currentPage = 1, int pageSize = 10)
         {
-         try
+            try
             {
-                 string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
+                string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
 
-                 HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
+                HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
 
-                if(responseMessage.IsSuccessStatusCode)
+                if (responseMessage.IsSuccessStatusCode)
                 {
                     string Json = await responseMessage.Content.ReadAsStringAsync();
 
-                    var exchangeRates =  JsonConvert.DeserializeObject<ExchangeRates>(Json);
+                    var exchangeRates = JsonConvert.DeserializeObject<ExchangeRates>(Json);
 
                     int totalItems = exchangeRates!.Rates.Count;
 
                     var paginatedRates = exchangeRates.Rates
-                    .Skip((currentPage-1) * pageSize)
+                    .Skip((currentPage - 1) * pageSize)
                     .Take(pageSize)
-                    .ToDictionary(kvp=> kvp.Key, kvp=>kvp.Value);
+                    .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 
                     exchangeRates.Rates = paginatedRates;
 
                     exchangeRates.pagination = new Pagination(
-                        totalItems : totalItems,
-                        pageSize : pageSize,
-                        currentPage : currentPage
+                        totalItems: totalItems,
+                        pageSize: pageSize,
+                        currentPage: currentPage
                     );
 
                     return exchangeRates;
@@ -52,7 +59,7 @@ namespace MyShop.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                _lloger.LogError(ex, "Error fetching exchange rates from API: {Message}", ex.Message);
             }
 
             return null;
@@ -64,9 +71,9 @@ namespace MyShop.Services
             {
                 var exchangeRates = await GetAllExchangeRateAsync(baseCurrency);
 
-                if(exchangeRates == null || !exchangeRates.Rates.ContainsKey(targetCurrency))
+                if (exchangeRates == null || !exchangeRates.Rates.ContainsKey(targetCurrency))
                 {
-                    throw new Exception("invalid target currency or unable to fetch exchange rates");
+                    throw new ArgumentException($"invalid target currency or unable to fetch exchange rates");
                 }
                 //Get the exchange rates for the target currency
 
@@ -75,34 +82,42 @@ namespace MyShop.Services
                 //Calculate the converted amount
                 return amount * rate;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                _lloger.LogError(ex, "Error converting currency: {Message}", ex.Message);
 
                 throw;
             }
-            
+
         }
 
-        public async Task<ExchangeRates?> GetAllExchangeRateAsync(string baseCurrency="USD")
+        public async Task<ExchangeRates?> GetAllExchangeRateAsync(string baseCurrency = "USD")
         {
-            string url =$"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
-
-            HttpResponseMessage httpResponseMessage = await _httpClient.GetAsync(url);
-
-            if(httpResponseMessage.IsSuccessStatusCode)
+            try
             {
-                string Json = await httpResponseMessage.Content.ReadAsStringAsync();
+                string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
 
-                var exchangeRates = JsonConvert.DeserializeObject<ExchangeRates?>(Json);
+                HttpResponseMessage httpResponseMessage = await _httpClient.GetAsync(url);
 
-                 //var rates = exchangeRates.Rates.ToDictionary(kvp=>kvp.Key, kvp=>kvp.Value);
+                if (httpResponseMessage.IsSuccessStatusCode)
+                {
+                    string Json = await httpResponseMessage.Content.ReadAsStringAsync();
 
-                return exchangeRates;
+                    var exchangeRates = JsonConvert.DeserializeObject<ExchangeRates?>(Json);
+
+                    //var rates = exchangeRates.Rates.ToDictionary(kvp=>kvp.Key, kvp=>kvp.Value);
+
+                    return exchangeRates;
+                }
             }
+            catch (Exception ex)
+            {
+                _lloger.LogError(ex, "Error fetching exchange rates from API: {Message}", ex.Message);
+            }
+
             return null;
         }
-        
-        
+
+
     }
 }
