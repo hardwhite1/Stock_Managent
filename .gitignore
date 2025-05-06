@@ -1,0 +1,39 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated_Code/
+*.g.cs
+*.g.i.cs
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Others
+*.log
+*.vs/
+.vscode/
+.vsconfig
+*.db
+*.pidb
+*.cache
+*.pdb
+
+# Rider
+.idea/
+
+# Environment settings
+.env
+.env.*
