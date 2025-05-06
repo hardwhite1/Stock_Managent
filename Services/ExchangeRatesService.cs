@@ -1,6 +1,7 @@
 using MyShop.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Linq.Expressions;
 
 namespace MyShop.Services
 {
@@ -17,8 +18,8 @@ namespace MyShop.Services
 
         public async Task<ExchangeRates?> GetExchangeRatesAsync(string baseCurrency="USD", int currentPage = 1 ,int pageSize = 10)
         {
-            // try
-            // {
+         try
+            {
                  string url = $"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
 
                  HttpResponseMessage responseMessage = await _httpClient.GetAsync(url);
@@ -29,7 +30,7 @@ namespace MyShop.Services
 
                     var exchangeRates =  JsonConvert.DeserializeObject<ExchangeRates>(Json);
 
-                    int totalItems = exchangeRates.Rates.Count;
+                    int totalItems = exchangeRates!.Rates.Count;
 
                     var paginatedRates = exchangeRates.Rates
                     .Skip((currentPage-1) * pageSize)
@@ -48,15 +49,20 @@ namespace MyShop.Services
                 }
 
 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
             return null;
-           
         }
 
         public async Task<decimal> ConvertCurrencyAsync(decimal amount, string baseCurrency, string targetCurrency)
         {
             try
             {
-                var exchangeRates = await GetExchangeRatesAsync(baseCurrency);
+                var exchangeRates = await GetAllExchangeRateAsync(baseCurrency);
 
                 if(exchangeRates == null || !exchangeRates.Rates.ContainsKey(targetCurrency))
                 {
@@ -77,5 +83,26 @@ namespace MyShop.Services
             }
             
         }
+
+        public async Task<ExchangeRates?> GetAllExchangeRateAsync(string baseCurrency="USD")
+        {
+            string url =$"https://api.exchangerate-api.com/v4/latest/{baseCurrency}";
+
+            HttpResponseMessage httpResponseMessage = await _httpClient.GetAsync(url);
+
+            if(httpResponseMessage.IsSuccessStatusCode)
+            {
+                string Json = await httpResponseMessage.Content.ReadAsStringAsync();
+
+                var exchangeRates = JsonConvert.DeserializeObject<ExchangeRates?>(Json);
+
+                 //var rates = exchangeRates.Rates.ToDictionary(kvp=>kvp.Key, kvp=>kvp.Value);
+
+                return exchangeRates;
+            }
+            return null;
+        }
+        
+        
     }
 }

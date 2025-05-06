@@ -280,3 +280,6 @@ C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.pdb
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\MyShop.genruntimeconfig.cache
 C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\ref\MyShop.dll
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\bin\Debug\net8.0\MyShop.staticwebassets.endpoints.json
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Jack\Desktop\Disk B\DOT NET CORE\E-Commerce\MyShop\obj\Debug\net8.0\staticwebassets\msbuild.MyShop.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
