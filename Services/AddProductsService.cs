@@ -16,13 +16,31 @@ namespace MyShop.Services
         public Pagination Pagination { get; set; }
         public async Task<bool> AddProductsAsync(ItemsModel itemsModel)
         {
-            itemsModel.Id = Guid.NewGuid();
+            if(itemsModel == null || string.IsNullOrWhiteSpace(itemsModel.Name))
+                return false;
 
-            _applicationDbContext.itemsModel.Add(itemsModel);
+            //Check if an item with the same name already exists
+            var existingItem = await _applicationDbContext.itemsModel.FirstOrDefaultAsync(i => i.Name == itemsModel.Name);
+            
+            if(existingItem != null)
+            {
+                //product exists, update its UnitsAvailable property
+                existingItem.UnitsAvailable += itemsModel.UnitsAvailable;
+
+                _applicationDbContext.itemsModel.Update(existingItem);
+            }
+            else
+            {
+                //New product, assign new ID
+
+                itemsModel.Id = Guid.NewGuid();
+
+                await _applicationDbContext.itemsModel.AddAsync(itemsModel);
+            }
 
             var saveResult = await _applicationDbContext.SaveChangesAsync();
-            
-            return saveResult == 1;
+
+            return saveResult > 0;
 
         }
 
